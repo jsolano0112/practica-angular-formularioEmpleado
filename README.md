@@ -1,9 +1,9 @@
 # PracticaAppEmpleado
 
-##Create new project
+## Create new project
 ng new PracticaAppEmpleado
 
-##Install Bootstrap, Jquery and Popper
+## Install Bootstrap, Jquery and Popper
 npm i bootstrap jquery popper.js --save
 
 📁angular.json> styles 
