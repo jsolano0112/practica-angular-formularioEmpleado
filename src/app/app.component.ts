@@ -15,6 +15,11 @@ export class AppComponent {
     new Employee("Jorge","Sanchez","Doctor",22222),
   ];
 
+  AddingEmployee(){
+    let myEmployee = new Employee(this.cName, this.cLastname, this.cPosition, this.cSalary)
+    this.employees.push(myEmployee)
+  }
+
   cName : string = "";
   cLastname : string = "";
   cPosition : string = ""; 
