@@ -1,9 +1,11 @@
 # PracticaAppEmpleado
 
 ## Create new project
+
 ng new PracticaAppEmpleado
 
 ## Install Bootstrap, Jquery and Popper
+
 npm i bootstrap jquery popper.js --save
 
 📁angular.json> styles 
@@ -17,3 +19,10 @@ npm i bootstrap jquery popper.js --save
 "node_modules/popper.js/dist/umd/popper.min.js",
 <br>
 "node_modules/bootstrap/dist/js/bootstrap.min.js"
+
+## Import 
+
+📁app.module.ts 
+<br>
+FormsModule
+
