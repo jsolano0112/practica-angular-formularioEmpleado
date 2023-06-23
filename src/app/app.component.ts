@@ -14,4 +14,9 @@ export class AppComponent {
     new Employee("Patricia","Perez","Lawyer",7000),
     new Employee("Jorge","Sanchez","Doctor",22222),
   ];
+
+  cName : string = "";
+  cLastname : string = "";
+  cPosition : string = ""; 
+  cSalary : number = 0;
 }
