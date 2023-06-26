@@ -38,17 +38,5 @@
 
 
 <br>
-<app-employee-son></app-employee-son>
-<div class="container">
-  <div class="row">
-    <div class="col">
-      <div *ngFor="let employee of employees; let i = index">
-
-       {{i+1}}: {{employee.name}} {{employee.lastname}} {{employee.position}} {{employee.salary}}
-
-      </div>
-
-    </div>
-  </div>
-</div>
+<app-employee-son *ngFor="let employee of employees; let i = index" [employeeList]="employee" [idx]="i"></app-employee-son>
 
