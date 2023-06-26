@@ -26,3 +26,6 @@ npm i bootstrap jquery popper.js --save
 <br>
 FormsModule
 
+## New Component
+
+ng g c namecomponent
