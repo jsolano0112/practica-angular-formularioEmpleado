@@ -6,7 +6,12 @@
          {{idx+1}}: {{employeeList.name}} {{employeeList.lastname}} {{employeeList.position}} {{employeeList.salary}}
   
         </div>
-  
+        
+        <app-characteristics (chEmployee)="addCh($event)"></app-characteristics>
+        <ul style="list-style: none;">
+          <li *ngFor="let ch of arrayCh">{{ch}}</li>
+
+        </ul>
       </div>
     </div>
   </div>
