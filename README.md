@@ -29,3 +29,7 @@ FormsModule
 ## New Component
 
 ng g c namecomponent
+
+## New Service
+
+ng g s nameservice
