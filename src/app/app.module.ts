@@ -6,6 +6,7 @@ import { AppComponent } from './app.component';
 import { FormsModule } from '@angular/forms';
 import { EmployeeSonComponent } from './employee-son/employee-son.component';
 import { CharacteristicsComponent } from './characteristics/characteristics.component';
+import { ServiceEmployeeService } from './service-employee.service';
 
 @NgModule({
   declarations: [
@@ -18,7 +19,7 @@ import { CharacteristicsComponent } from './characteristics/characteristics.comp
     AppRoutingModule,
     FormsModule
   ],
-  providers: [],
+  providers: [ServiceEmployeeService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
