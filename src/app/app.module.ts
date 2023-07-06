@@ -8,17 +8,34 @@ import { EmployeeSonComponent } from './employee-son/employee-son.component';
 import { CharacteristicsComponent } from './characteristics/characteristics.component';
 import { ServiceEmployeeService } from './service-employee.service';
 import { EmployeesService } from './employees.service';
+import { HomeComponentComponent } from './home-component/home-component.component';
+import { ProjectsComponentComponent } from './projects-component/projects-component.component';
+import { WhoComponentComponent } from './who-component/who-component.component';
+import { ContactComponentComponent } from './contact-component/contact-component.component';
+import { RouterModule, Routes } from '@angular/router';
+
+const appRoutes: Routes = [
+  {path:'', component:HomeComponentComponent},
+  {path:'projects', component:ProjectsComponentComponent},
+  {path:'whoiam', component:WhoComponentComponent},
+  {path:'contact', component:ContactComponentComponent},
+];
 
 @NgModule({
   declarations: [
     AppComponent,
     EmployeeSonComponent,
-    CharacteristicsComponent
+    CharacteristicsComponent,
+    HomeComponentComponent,
+    ProjectsComponentComponent,
+    WhoComponentComponent,
+    ContactComponentComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    FormsModule
+    FormsModule,
+    RouterModule
   ],
   providers: [ServiceEmployeeService, EmployeesService],
   bootstrap: [AppComponent]
