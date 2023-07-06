@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { Employee } from './employee.models';
 import { ServiceEmployeeService } from './service-employee.service';
+import { EmployeesService } from './employees.service';
 
 @Component({
   selector: 'app-root',
@@ -10,19 +11,17 @@ import { ServiceEmployeeService } from './service-employee.service';
 export class AppComponent {
   title = 'Employee List';
 
-  constructor(private miServicio:ServiceEmployeeService) {
-
+  // añadir servicio
+  constructor(private miServicio:ServiceEmployeeService,private employeeService:EmployeesService) {
+    this.employees = this.employeeService.employees;
   }
-  employees: Employee[] = [
-    new Employee("Juana","Solano","Engineer",1000000000),
-    new Employee("Patricia","Perez","Lawyer",7000),
-    new Employee("Jorge","Sanchez","Doctor",22222),
-  ];
+  employees: Employee[] = [];
 
   AddingEmployee(){
     let myEmployee = new Employee(this.cName, this.cLastname, this.cPosition, this.cSalary);
     this.miServicio.muestraMensaje("Name of employee " + myEmployee.name);
-    this.employees.push(myEmployee);
+    this.employeeService.addEmployeeService(myEmployee);
+    
   }
 
   cName : string = "";

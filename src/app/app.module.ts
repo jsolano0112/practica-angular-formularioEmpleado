@@ -7,6 +7,7 @@ import { FormsModule } from '@angular/forms';
 import { EmployeeSonComponent } from './employee-son/employee-son.component';
 import { CharacteristicsComponent } from './characteristics/characteristics.component';
 import { ServiceEmployeeService } from './service-employee.service';
+import { EmployeesService } from './employees.service';
 
 @NgModule({
   declarations: [
@@ -19,7 +20,7 @@ import { ServiceEmployeeService } from './service-employee.service';
     AppRoutingModule,
     FormsModule
   ],
-  providers: [ServiceEmployeeService],
+  providers: [ServiceEmployeeService, EmployeesService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
