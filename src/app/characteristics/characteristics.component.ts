@@ -9,12 +9,12 @@ import { ServiceEmployeeService } from '../service-employee.service';
 export class CharacteristicsComponent {
   @Output() chEmployee = new EventEmitter<string>();
 
-  constructor(private miServicio:ServiceEmployeeService) {
+  // constructor(private miServicio:ServiceEmployeeService) {
 
-  }
+  // }
   
   addCh(value:string){
-    this.miServicio.muestraMensaje(value);
-    this.chEmployee.emit(value);
+    // this.miServicio.muestraMensaje(value);
+    // this.chEmployee.emit(value);
   }
 }
